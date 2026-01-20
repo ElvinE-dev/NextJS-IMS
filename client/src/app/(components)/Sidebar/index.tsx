@@ -50,7 +50,7 @@ function Sidebar() {
     <div className={sidebarClassNames}>
       {/* TOP LOGO */}
       <div className={`flex gap-3 justify-between md:justify-normal items-center pt-8 ${isSidebarCollapsed ? 'px-5' : 'px-8'}`}>
-        <div>Logo</div>
+        <img src="http://localhost:8000/assets/logo.png" alt="" />
         <h1 className={`${isSidebarCollapsed ? 'hidden' : 'block'} font-extrabold text-2xl`}>LVSTOCK</h1>
 
         <button className="md:hidden px-3 py-3 bg-gray-100 rounded-full hover:bg-blue-100" onClick={toggleSidebar}>

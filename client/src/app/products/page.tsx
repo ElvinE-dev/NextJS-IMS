@@ -66,10 +66,10 @@ const Products = () => {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 justify-between">
         {isLoading ? (
           <div>Loading...</div>
-        ): (products?.map((product) => (
+        ): (products?.map((product,index) => (
             <div key={product.productId} className='border shadow rounded-md p-4 max-w-full w-full mx-auto'>
               <div className="flex flex-col items-center">
-                img
+                <img src={`http://localhost:8000/assets/product${Math.floor(index % 3) + 1}.png`} className="w-36 h-36" alt="" />
 
                 <h3 className="text-lg text-gray-900 font-semibold">{product.name}</h3>
 

@@ -56,8 +56,8 @@ const Navbar = () => {
 
                 <hr className="w-0 h-7 border border-solid border-l border-gray-300 mx-3" />
                 <div className="flex items-center gap-3 cursor-pointer">
-                    <div className="w-9 h-9">
-                        Image
+                    <div className="w-9 h-9 rounded-full overflow-hidden">
+                        <img src="http://localhost:8000/assets/profile.jpg" className='w-full h-full object-cover' alt="" />
                     </div>
                     <span className='font-semibold'>Elpin</span>
                 </div>

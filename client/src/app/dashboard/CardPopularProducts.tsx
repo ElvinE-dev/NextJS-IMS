@@ -21,10 +21,10 @@ const CardPopularProducts = () => {
             <hr />
 
             <div className="overflow-auto h-full">
-                {dashboardMetrics?.popularProducts?.map((product) => (
+                {dashboardMetrics?.popularProducts?.map((product, index) => (
                     <div key={product.productId} className='flex items-center justify-between gap-3 px-5 py-7 border-b'>
                         <div className="flex items-center gap-3">
-                            <div>img</div>
+                            <img src={`http://localhost:8000/assets/product${Math.floor(index % 3) + 1}.png`} className="w-10 h-10" alt="" />
                             <div className="flex flex-col justify-between gap-1">
                                 <div className='font-bold text-gray-700'>{product.name}</div>
                                 <div className="flex text-sm items-center">
