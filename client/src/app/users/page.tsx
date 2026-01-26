@@ -32,7 +32,7 @@ const Users = () => {
 
   return (
     <div className="flex flex-col">
-        <Header name="Inventory" />
+        <Header name="Users" />
 
         <DataGrid 
             rows={users}
